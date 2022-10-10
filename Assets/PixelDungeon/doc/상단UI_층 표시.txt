@@ -1,0 +1,3 @@
+Player.cs floor
+
+-> UI_Manager.I._topbar에 전달

@@ -1,0 +1,45 @@
+
+player(Unit 상속)
+
+적 캐릭터, enemy (쥐, 등등)
+-Unit.cs (체력 변수 hp )
+-Rat.cs (Unit 상속)
+-이미지 2개로 idle 애니메이션
+-Rat.controller (Animator에 연결)
+-rat_idle.anim
+-게임 재생하면 쥐가 자동으로 rat_idle 애니메이션
+
+쥐의 공격 루틴 구현
+-rat_attack.anim 애니메이션 클립 추가
+-Rat.controller 편집화면에서  attack 노드(state)를 추가, idle -> attack 조건을 가지고 애니메이션 상태 전화.
+-조건 파라메터 추가: "attack" trigger type
+-상태 전이(state transition):
+* 상태 전이 조건을 "attack" 트리거로 하기
+* Rat.cs의 Attack()함수에서  _anim.SetTrigger("attack)
+* attack -> idle 로 돌아올 때는 조건 없이 돌아오게 함. HasExitTime 을 체크해놓기
+
+----------------------------------------
+
+1차적으로는 부딪혔을때 피격이 발생하도록
+
+체력이 0이되면
+
+게임 오버 화면(canvas ui) - 간단히 만들기
+
+------------------------------------------
+(과제 1)
+이름: Canvas의 자식객체로
+게임오브젝트 이름: UI_GameLog
+게임스트립트 이름: UI_GameLog.cs
+왼쪽 하단 게임로그(정보) 표시(텍스트)
+- 한 줄로 구현
+- 피격시에만 구현
+- 정해진 초(n초)가 지나면 사라지게
+
+------------------------------------------
+(과제  2)
+-Player(혹은 Unit)에 DoHitEffect 이름의 함수로 구현
+- 워리어 이미지(SpriteRenderer)  컬러값 건드려서, 피격 연출을 간단히 해보기
+-Invoke나 코루틴을 사용하면 쉬움
+
+

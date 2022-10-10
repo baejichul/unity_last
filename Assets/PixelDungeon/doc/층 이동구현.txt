@@ -1,0 +1,11 @@
+<층 이동 구현>
+각 층은 시작점(StartPosition) 가져야 함.
+
+내려가는 계단 배치
+- 충돌체(트리거)
+
+OnTriggerEnter
+-캐릭터의 transform.position을 다음 층(Grid)의 시작점(StartObject)으로 위치 수정
+
+----
+<이전 층으로 올라가는 루틴>

@@ -1,0 +1,65 @@
+1. 그리드 타일맵과 카메라를 제외한 나머지는 다 제거하고, 다른이름으로 씬 저장, 새 씬(Basic)을 하나 만들기
+
+
+
+2. NetworkManager 오브젝트를 만들기
+- NetworkManager 콤포넌트
+- KcpTransport콤포넌트(자동 추가)
+- NetworkManagerHUD 콤포넌트 
+콤포넌트 추가
+
+
+3. 새로 만든 씬을 빌드 세팅에 추가
+
+
+4. NetworkStartPostion 세팅
+: 플레이들이 접속했을 때, 시작 포인트
+
+
+5. 플레이어 세팅
+- NetworkIdentity : 네트워크 상에 존재하는 게임오브젝트라면 반드시 식별할 수 있도록 가져야 하는 콤포넌트
+- NetworkTransform : Transform을 동기화 시켜주는 콤포넌트
+- 플레이어 스크립트 작성 : 이것은 반드시 NetworkBehaviour를 상속해야만 한다. 여기서 플레이어 이동 등 동기적으로 작용하는 네트워크 코드를 작성하게 된다.
+* ClientAuthority : true 체크 
+
+
+
+*NetworkBehaviour : 네트워크 처리를 하려면 반드시 상속해야만 하는 스크립트.
+-동기 변수 (Sync Variable)
+-원격 함수 호출 (RPC, Remote Procedure Call)
+이런 기능들이 가능해짐.
+
+1) 여러 컴퓨터에서 동시에 멀티로 스폰이 되어야 하고
+
+2) 움직임 동기화
+
+
+6. 플레이어 게임오브젝트를 프리팹으로 만들고, 씬에서는 지워준다.
+
+
+7. 네트워크 매니져 추가 설정
+1) 플레이어 프리팹 연결
+2) 시작할 씬 연결
+
+
+8. 플레이어 스크립트 이동 처리 하는 부분에서, isLocalPlayer true인 경우에만 움직임 처리
+
+9. 클라이언트 두 개에서 양쪽 캐릭터 움직임 동기화 되는 것 확인
+
+
+
+테스트 편하게 하는 툴 : ParrelSync
+
+
+
+
+
+
+
+
+
+
+
+
+
+

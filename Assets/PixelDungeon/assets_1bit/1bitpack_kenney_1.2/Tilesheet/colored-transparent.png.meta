@@ -6804,7 +6804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored-transparent_319
+      name: char_monster
       rect:
         serializedVersion: 2
         x: 442
@@ -6846,7 +6846,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: colored-transparent_321
+      name: char_ghost
       rect:
         serializedVersion: 2
         x: 476
@@ -22790,6 +22790,7 @@ TextureImporter:
       colored-transparent_1069: -1255599544
       colored-transparent_485: 1744724650
       colored-transparent_797: 1846353516
+      char_ghost: 169441631
       colored-transparent_186: -1111062302
       colored-transparent_306: -676934996
       colored-transparent_354: 760249392
@@ -23170,6 +23171,7 @@ TextureImporter:
       colored-transparent_953: -991921204
       colored-transparent_1070: -474783023
       colored-transparent_1076: 247427125
+      char_monster: 1490170189
       colored-transparent_402: 1543795648
       colored-transparent_903: 949985534
       colored-transparent_1030: 520893531
@@ -23266,7 +23268,6 @@ TextureImporter:
       colored-transparent_908: 554700358
       colored-transparent_1036: -664182478
       colored-transparent_54: -785619291
-      colored-transparent_321: 169441631
       colored-transparent_399: -237932067
       colored-transparent_308: 1811959651
       colored-transparent_328: -27896885
@@ -23319,15 +23320,15 @@ TextureImporter:
       colored-transparent_100: 1909197968
       colored-transparent_363: -1960501331
       colored-transparent_368: -482145629
-      colored-transparent_717: -1578762543
+      colored-transparent_292: 1137484590
       colored-transparent_739: -77115618
       colored-transparent_696: 1792748680
-      colored-transparent_292: 1137484590
-      colored-transparent_81: 799098014
-      colored-transparent_948: -1883070127
       colored-transparent_234: 638846267
-      colored-transparent_807: -2043090621
+      colored-transparent_81: 799098014
+      colored-transparent_717: -1578762543
       char_night: 1723559898
+      colored-transparent_948: -1883070127
+      colored-transparent_807: -2043090621
       colored-transparent_771: -525428584
       colored-transparent_950: 1432595287
       colored-transparent_18: -406752183
@@ -23380,9 +23381,9 @@ TextureImporter:
       colored-transparent_666: 576200895
       colored-transparent_487: 1725014092
       colored-transparent_60: -1987271525
+      colored-transparent_391: -760110737
       colored-transparent_405: 2073474368
       colored-transparent_906: -1940384518
-      colored-transparent_391: -760110737
       colored-transparent_375: -670571804
       colored-transparent_698: 1054650584
       colored-transparent_39: 862518682
@@ -23522,11 +23523,10 @@ TextureImporter:
       colored-transparent_815: 1301729142
       colored-transparent_613: -1523498545
       colored-transparent_620: 151514136
-      colored-transparent_319: 1490170189
-      colored-transparent_483: -1526742411
       colored-transparent_543: 1502034143
-      colored-transparent_524: 705052859
+      colored-transparent_483: -1526742411
       colored-transparent_726: -882629688
+      colored-transparent_524: 705052859
       colored-transparent_714: 525816213
       colored-transparent_338: -1661435474
       colored-transparent_947: 1926724222

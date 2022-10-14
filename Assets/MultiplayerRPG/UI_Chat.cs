@@ -46,7 +46,7 @@ public class UI_Chat : NetworkBehaviour
 
         Debug.Log("OnChatSubmit !! " + chatMessage);
 
-        // 주석
+        // 커맨드함수를 호출하여서 서버에서 동기화 변수인 _statusText수정하게 하기
         _player.CmdSendChatMessage(chatMessage);
 
 

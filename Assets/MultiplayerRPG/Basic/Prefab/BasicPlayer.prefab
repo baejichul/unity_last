@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 6508448521579147961}
   - component: {fileID: 6508448521579147964}
   - component: {fileID: 6508448521579147967}
-  - component: {fileID: 6508448521579147966}
+  - component: {fileID: 1139918829646949952}
   m_Layer: 0
   m_Name: BasicPlayer
   m_TagString: Untagged
@@ -188,7 +188,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e5e01410c33fd29488cb51b3c1635eb3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   showGizmos: 0
   showOverlay: 0
   overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
---- !u!114 &6508448521579147966
+--- !u!114 &1139918829646949952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,9 +340,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6508448521579147959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c42cf4b589dba34494685dfadb24a02, type: 3}
+  m_Script: {fileID: 11500000, guid: 86a6d7fae2798b5458c45a0c9d66d354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
   _speed: 5
+  _playerName: 
+  _playerColor: {r: 0, g: 0, b: 0, a: 0}

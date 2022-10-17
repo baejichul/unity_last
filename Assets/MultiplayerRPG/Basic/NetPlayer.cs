@@ -74,6 +74,7 @@ public class NetPlayer : NetworkBehaviour
         CmdSetupPlayer(name); // 플레이어 셋업
     }
 
+    // Client => Server 브로드캐스팅
     [Command]
     public void CmdSetupPlayer(string name) //호스트(서버)에서 실행되는 코드
     {
